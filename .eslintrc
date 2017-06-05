@@ -1,0 +1,16 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "no-console": 0,
+    "no-unused-vars": 1,
+    "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
+    "no-param-reassign": ["error", { "props": false }],
+    "no-restricted-properties": 0,
+    "import/prefer-default-export": 0,
+    "linebreak-style": ["error", "windows"],
+  },
+}
