@@ -1,3 +1,5 @@
+import '../styles/venue.scss';
+
 function renderAddress(addressArray) {
   const address = addressArray.map(addressLine => `<li class="address__line">${addressLine}</li>`).join('');
   return address;

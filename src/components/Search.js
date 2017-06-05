@@ -1,5 +1,6 @@
 import { singleQS } from '../utils/helpers';
 import { displayResults, searchError } from './Results';
+import '../styles/search.scss';
 
 const fourSquareID = 'W4OUNOB0FXBX4TIO5IFY14PE3N4PH5YF5SQ124ROHZ4LVS52';
 const fourSquareSecret = 'K2WIMXBOR2CUNO0Y3ZBNRTKAWZODWQ4NDBCTSTNJNP0RJG4W';
@@ -8,7 +9,6 @@ const searchInput = singleQS('#search');
 const searchBox = singleQS('#searchBox');
 
 function handleErrors(response) {
-  console.log(response.ok);
   if (!response.ok) {
     throw Error(response.statusText);
   }

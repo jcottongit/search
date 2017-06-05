@@ -1,0 +1,45 @@
+@import '~reset-css/reset.css';
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom, #e86c57 -1%,#e86c57 0%,#e86c57 0%,#e86c57 0%,#e86c57 0%,#e86c57 0%,#ea2803 32%,#ff6600 100%);
+  background-attachment: fixed;
+}
+
+.search-page {
+  width: 90%;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+#search {
+  display: flex;
+  font-size: 0;
+  margin-bottom: 10px;
+}
+
+.search-box {
+  width: 80%;
+  font-size: 30px;
+}
+
+.search-results{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+button {
+  width: 20%;
+}
