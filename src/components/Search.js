@@ -13,6 +13,9 @@ function searchResults(e) {
   const searchValue = searchLocation.replace(' ', '+');
   const searchString = `https://api.foursquare.com/v2/venues/explore?client_id=${fourSquareID}&client_secret=${fourSquareSecret}&v=20130815&near=${searchValue}&limit=100`;
 
+  fetch(searchString)
+    .then(data => data.json())
+    .then(data => displayResults(data.response));
 }
 
 searchInput.addEventListener('submit', searchResults);
