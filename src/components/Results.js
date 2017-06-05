@@ -10,3 +10,16 @@ export function displayResults(venues) {
 
   searchResultsBox.innerHTML = resultsHTML;
 }
+
+export function searchError(searchLocation) {
+  const message =
+    searchLocation
+      ? `Nothing of interest found in <span class="error-location">${searchLocation}</span>, try searching somewhere else`
+      : 'Whoops, you forgot to enter a location!'
+  const noResults = `
+    <div class="error">
+      <span>${message}</span>
+    </div>
+  `;
+  searchResultsBox.innerHTML = noResults;
+}
